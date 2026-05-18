@@ -2,8 +2,23 @@ import matplotlib.pyplot as plt
 import numpy as np
 import helper
 
-def plotLeftRiemann(x, y, ax):    
+"""
+Function: Plots left riemann sum
 
+Preconditions:
+    - x: 
+        - must be a non-empty array with numerical types 
+        - must have same amount of elements as y array
+    - y: 
+        - must be a non-empty array with numerical types 
+        - must have same amount of elements as x array
+    - ax: must be an axes object
+
+Postconditions:
+    - Plots the left riemann sum
+"""
+def plotLeftRiemann(x, y, ax):   
+     
     axObject = ax[0,0]
     maxIndex = (len(x) - 1)
     area = 0
