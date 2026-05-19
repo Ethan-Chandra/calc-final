@@ -1,5 +1,4 @@
 import helper
-import math
 
 def midpointRiemann(x, y, ax):   
      
@@ -16,7 +15,8 @@ def midpointRiemann(x, y, ax):
         width = (x[i+2] - x[i])
         height = y[i+1]
 
-        # aligned with edge and start at current x point to allow for graphing uneven midpoints       
+        # aligned with edge and start at current x point to allow for graphing uneven midpoints  
+        # align center does not work     
         axObject.bar(x[i], height, width, align="edge", alpha=0.2, facecolor='C0', edgecolor='b')
         area += (width * height)
     

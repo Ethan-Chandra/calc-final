@@ -3,6 +3,7 @@ import numpy as np
 from leftRiemann import plotLeftRiemann
 from rightRiemann import plotRightRiemann
 from midpointRiemann import midpointRiemann
+from trapezoidalSum import trapezoidalSum
 
 # x and y arrays will always have the same number of elements
 fig, ax = plt.subplots(2, 2)
@@ -27,5 +28,11 @@ xMid = [1, 3, 4, 7, 8, 13, 15, 18, 22]
 yMid = [3, 5, 7, 10, 12, 17, 20, 24, 28]
 midpointRiemann(xMid, yMid, ax)
 
+# Trapezoidal Sum
+# xTrap = [1, 4, 7, 10]
+# yTrap = [2, 5, 3, 8]
+xTrap = [0, 2, 5, 7, 8]
+yTrap = [0, 4, 13, 21, 23]
+trapezoidalSum(xTrap, yTrap, ax)
 
 plt.show()
