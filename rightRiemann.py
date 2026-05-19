@@ -14,6 +14,7 @@ def plotRightRiemann(x, y, ax):
     helper.plotGraph(x, y, axObject)
 
     # Create visual bars and add area
+    # Set width to negative to align bars with their right edge
     for i in range(0, maxIndex):
         width = (x[i+1] - x[i])
         height = rightY[i]
